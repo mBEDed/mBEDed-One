@@ -1,0 +1,30 @@
+{
+  "packages": [
+    {
+      "name": "mBEDed One",
+      "maintainer": "MCUdude",
+      "websiteURL": "https://github.com/mBEDed/mBEDed-One",
+      "email": "mbededsystems@outlook.com",
+      "help": {
+        "online": "https://mbeded.systems"
+      },
+      "platforms": [
+        {
+          "name": "mBEDed One",
+          "architecture": "avr",
+          "version": "1.0.0",
+          "category": "Contributed",
+          "url": "https://mBEDed.github.io/mBEDed-One/mBEDedOne-1.0.0.tar.bz2",
+          "archiveFileName": "mBEDedOne-1.0.0.tar.bz2",
+          "checksum": "SHA-256:6b4a760b9a7e36212042ff138ea1bacb0214484931184f6ecd1be15b0524604a",
+          "size": "1,00,372",
+          "boards": [
+            {"name": "mBEDed One"}
+          ],
+          "toolsDependencies": []
+        }
+      ],
+      "tools": []
+    }
+  ]
+}
