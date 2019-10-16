@@ -1,0 +1,30 @@
+# Menu options
+menu.variant=Variant
+
+# General
+mbone.name=mBEDed One
+mbone.vid.0=0x03EB
+mbone.pid.0=0xA03F
+mbone.upload.tool=avrdude
+mbone.upload.protocol=arduino
+mbone.upload.maximum_size=29696
+mbone.upload.speed=57600
+mbone.bootloader.tool=avrdude
+mbone.bootloader.high_fuses=0xff
+mbone.bootloader.low_fuses=0xff
+mbone.bootloader.extended_fuses=0x07
+mbone.bootloader.path=lgt8fxx8e
+mbone.bootloader.file=lgt8fxx8e\optiboot_lgt8f328d.hex
+mbone.bootloader.unlock_bits=0x3f
+mbone.bootloader.lock_bits=0x3f
+mbone.build.mcu=atmega328p
+mbone.build.f_cpu=16000000L
+mbone.build.core=mbeded
+mbone.build.board=LGT_ONE
+
+# Variants
+mbone.menu.variant.modelGen=Generic LGT8F328D
+mbone.menu.variant.modelGen.build.variant=generic
+
+mbone.menu.variant.modelStandard=mBEDed One Board
+mbone.menu.variant.modelStandard.build.variant=standard
