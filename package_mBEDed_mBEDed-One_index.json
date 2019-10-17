@@ -22,6 +22,20 @@
             {"name": "mBEDed One"}
           ],
           "toolsDependencies": []
+        },
+		{
+          "name": "mBEDed One",
+          "architecture": "avr",
+          "version": "1.0.1",
+          "category": "Contributed",
+          "url": "https://mBEDed.github.io/mBEDed-One/mBEDedOne-1.0.1.tar.bz2",
+          "archiveFileName": "mBEDedOne-1.0.1.tar.bz2",
+          "checksum": "SHA-256:366c50943db3e70d470dfcfea9a50e88c6c8111f555eb347fac673d0a2aefa76",
+          "size": "101577",
+          "boards": [
+            {"name": "mBEDed One"}
+          ],
+          "toolsDependencies": []
         }
       ],
       "tools": []
