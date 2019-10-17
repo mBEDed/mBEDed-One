@@ -13,8 +13,8 @@ mbone.bootloader.tool=avrdude
 mbone.bootloader.high_fuses=0xff
 mbone.bootloader.low_fuses=0xff
 mbone.bootloader.extended_fuses=0x07
-mbone.bootloader.path=lgt8fxx8e
-mbone.bootloader.file=lgt8fxx8e\optiboot_lgt8f328d.hex
+mbone.bootloader.path=lgt8fx8e
+mbone.bootloader.file=lgt8fx8e\optiboot_lgt8f328d.hex
 mbone.bootloader.unlock_bits=0x3f
 mbone.bootloader.lock_bits=0x3f
 mbone.build.mcu=atmega328p
@@ -23,8 +23,8 @@ mbone.build.core=mbeded
 mbone.build.board=LGT_ONE
 
 # Variants
-mbone.menu.variant.modelGen=Generic LGT8F328D
-mbone.menu.variant.modelGen.build.variant=generic
-
 mbone.menu.variant.modelStandard=mBEDed One Board
 mbone.menu.variant.modelStandard.build.variant=standard
+
+mbone.menu.variant.modelGen=Generic LGT8F328D
+mbone.menu.variant.modelGen.build.variant=generic

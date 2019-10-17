@@ -12,7 +12,6 @@ A upgrade to Arduino UNO while keeping the same core features intact.
   - [with bare minimum µC or custom board](#with-bare-minimum-µC-or-custom-board)
 * [Wiring reference](#wiring-reference)
 * **[Pinout](#pinout)**
-* **[Minimal setup](#minimal-setup)**
 
 ## Microcontroller
 * LGT8F328D
@@ -43,14 +42,14 @@ Ok, so you're downloaded and installed mBEDed One, but how to get started? Here'
 #### with mBEDed One Board
 * Hook up your mBEDed One just as Arduino Uno.
 * Open the **Tools > Board** menu item, and select **mBEDed One**.
-* Select your preferred clock frequency. **16 MHz** is standard on most Arduino boards.
+* Select **mBEDed One Board** varient.
 * Then select the correct serial port under the **Tools** menu, and click the **Upload** button.
 
 #### with bare minimum µC or custom board
 * Hook up your microcontroller as shown in the [pinout diagram](#pinout).
   - If you're not planning to use the bootloader (uploading code using a USB to serial adapter), the FTDI header and the 100 nF capacitor on the reset pin can be omitted.
 * Open the **Tools > Board** menu item, and select **mBEDed One**. 
-* Select your preferred clock frequency. **16 MHz** is standard on most Arduino boards.
+* Select **Generic LGT8F328D** varient.
 * If you are using external programmer then, select what kind of programmer you're using under the **Programmers** menu.
 * Hit **Burn Bootloader**. As an LED is connected to pin 13, it should flash twice every second.* Now that the bootloader burnt, you can upload your code in two ways (as no fuse settings is required for mBEDed One to set):
   - Disconnect your programmer tool, and connect a USB to to on-board connector to the microcontroller, like shown in the [pinout diagram](#pinout). Then select the correct serial port under the **Tools** menu, and click the **Upload** button. If you're getting some kind of timeout error, it means your RX and TX pins are swapped, or your auto reset circuity isn't working properly (the 100 nF capacitor on the reset line).
@@ -72,14 +71,3 @@ I hope you find this useful, because they really are!
 
 ### LGT8F328D
 Since there are no standardized pinout for this chip family, We've created one. We've tried to make it as simple and logical as possible. This pinout makes great sense if you're getting this [mBEDed One Board](https://mBEDed.Systems) from us. The standard LED pin is assigned to Arduino pin 13, and will blink twice if you hit the reset button.
-
-### mBEDed One Pinout
-Beside including the original Arduino Uno pinout for the ATmega328, We've some extra pins as shown.
-<b>Click to enlarge:</b> <br/>
-<img src="https://i.imgur.com/sweRJs3.jpg" width="320"> <img src="https://i.imgur.com/O7WtWAj.jpg" width="320">
-
-
-## Minimal setup
-Here's some simple schematics for the LGT8F328D showing a minimal setup using an external crystal. Omit the crystal and the two 22pF capacitors if you're using the internal oscillator. <br/>
-<b>Click to enlarge:</b> <br/>
-<img src="https://i.imgur.com/BkJfIWC.png" width="400">    <img src="http://i.imgur.com/gQS1ORv.png" width="400">
